@@ -1,2 +1,3 @@
-# mongoose-type-upload
-GraphQL upload schema type for mongoose
+# mongoose-type-file
+
+mongoose file type
