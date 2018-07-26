@@ -1,3 +1,2 @@
 # mongoose-type-file
-
-mongoose file type
+**Deprecated: Use (mongoose-uploader)[https://github.com/zhangkaiyulw/mongoose-uploader] instead**
