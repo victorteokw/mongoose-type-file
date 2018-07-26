@@ -6,17 +6,9 @@ module.exports = (mongoose) => {
 
   File.prototype = Object.create(mongoose.SchemaType.prototype);
 
-  File.prototype.cast = function(val) {
-    const {
-      url,
-      filename,
-      mimetype,
-      encoding,
-      size,
-      variants
-    } = val;
-    return { url, filename, mimetype, encoding, size, variants };
-  };
+  File.prototype.cast =
+    ({ url, filename, mimetype, encoding, size, variants }) =>
+      ({ url, filename, mimetype, encoding, size, variants });
 
   mongoose.Schema.Types.File = File;
 };
